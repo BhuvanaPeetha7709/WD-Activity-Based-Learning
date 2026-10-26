@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>TravelGo - Travel Booking</title>
+<link rel="stylesheet" href="case study30.css">
+</head>
+<body>
+<header>
+<div class="logo">Travel<span>Go</span></div>
+<nav>
+<a href="#home">Home</a>
+<a href="#booking">Book Tickets</a>
+<a href="#services">Services</a>
+<a href="#fares">Fares</a>
+</nav>
+</header>
+<section class="hero" id="home">
+<div class="hero-content">
+<h1>Explore the World With Us</h1>
+<p>Your journey begins with one simple booking.</p>
+<a href="#booking" class="explore-btn">Book Your Journey</a>
+</div>
+</section>
+<section class="booking-section" id="booking">
+<h2>Plan Your Trip</h2>
+<p class="subtitle">Enter your travel details below</p>
+<form action="#" method="get">
+<div class="form-grid">
+<div class="field">
+<label for="source">From</label>
+<input type="text" id="source" name="source"
+placeholder="Source city" required>
+</div>
+<div class="field">
+<label for="destination">To</label>
+<input type="text" id="destination" name="destination"
+placeholder="Destination city" required>
+</div>
+<div class="field">
+<label for="departure">Departure Date</label>
+<input type="date" id="departure" name="departure" required>
+</div>
+<div class="field">
+<label for="return">Return Date</label>
+<input type="date" id="return" name="return">
+</div>
+<div class="field">
+<label for="travel">Travel Type</label>
+<select id="travel" name="travel">
+<option>Bus</option>
+<option>Train</option>
+<option>Flight</option>
+</select>
+</div>
+<div class="field">
+<label for="passengers">Passengers</label>
+<select id="passengers" name="passengers">
+<option>1 Passenger</option>
+<option>2 Passengers</option>
+<option>3 Passengers</option>
+<option>4 Passengers</option>
+<option>5 Passengers</option>
+</select>
+</div>
+<div class="field">
+<label for="name">Passenger Name</label>
+<input type="text" id="name" name="name"
+placeholder="Enter full name" required>
+</div>
+<div class="field">
+<label for="phone">Mobile Number</label>
+<input type="tel" id="phone" name="phone"
+placeholder="Enter mobile number" required>
+</div>
+</div>
+<button type="submit" class="search-btn">Search Available Trips</button>
+</form>
+</section>
+<section class="services" id="services">
+<h2>Our Travel Services</h2>
+<p class="subtitle">Choose the travel option that suits you</p>
+<div class="card-container">
+<div class="travel-card">
+<div class="card-icon">🚌</div>
+<h3>Bus Booking</h3>
+<p>Comfortable AC and non-AC buses for your journey.</p>
+<p class="price">Starting at ₹499</p>
+<a href="#fares">View Details</a>
+</div>
+<div class="travel-card">
+<div class="card-icon">🚆</div>
+<h3>Train Booking</h3>
+<p>Travel conveniently with multiple seating classes.</p>
+<p class="price">Starting at ₹299</p>
+<a href="#fares">View Details</a>
+</div>
+<div class="travel-card">
+<div class="card-icon">✈️</div>
+<h3>Flight Booking</h3>
+<p>Reach your destination faster with air travel.</p>
+<p class="price">Starting at ₹2,499</p>
+<a href="#fares">View Details</a>
+</div>
+</div>
+</section>
+<section class="fare-section" id="fares">
+<h2>Compare Travel Fares</h2>
+<p class="subtitle">Sample fares for easy comparison</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>Transport</th>
+<th>Travel Class</th>
+<th>Facilities</th>
+<th>Fare</th>
+<th>Availability</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bus</td>
+<td>AC Sleeper</td>
+<td>AC, Charging Point</td>
+<td>₹899</td>
+<td><span class="available">Available</span></td>
+</tr>
+<tr>
+<td>Train</td>
+<td>3AC</td>
+<td>Berth, Charging Point</td>
+<td>₹650</td>
+<td><span class="available">Available</span></td>
+</tr>
+<tr>
+<td>Flight</td>
+<td>Economy</td>
+<td>Cabin Baggage</td>
+<td>₹3,499</td>
+<td><span class="available">Available</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="note">Note: These are sample fares, not live ticket prices.</p>
+</section>
+<section class="seat-section">
+<h2>Select Your Seat</h2>
+<p class="subtitle">Example bus seat-selection layout</p>
+<div class="bus">
+<div class="driver">🚘 Driver</div>
+<div class="seat-layout">
+<div class="seat-row">
+<label><input type="checkbox" name="seat" value="A1"> A1</label>
+<label><input type="checkbox" name="seat" value="A2"> A2</label>
+<span class="aisle"></span>
+<label><input type="checkbox" name="seat" value="A3"> A3</label>
+<label><input type="checkbox" name="seat" value="A4"> A4</label>
+</div>
+<div class="seat-row">
+<label><input type="checkbox" name="seat" value="B1"> B1</label>
+<label><input type="checkbox" name="seat" value="B2"> B2</label>
+<span class="aisle"></span>
+<label><input type="checkbox" name="seat" value="B3"> B3</label>
+<label><input type="checkbox" name="seat" value="B4"> B4</label>
+</div>
+<div class="seat-row">
+<label><input type="checkbox" name="seat" value="C1"> C1</label>
+<label><input type="checkbox" name="seat" value="C2"> C2</label>
+<span class="aisle"></span>
+<label><input type="checkbox" name="seat" value="C3"> C3</label>
+<label><input type="checkbox" name="seat" value="C4"> C4</label>
+</div>
+</div>
+<p class="seat-note"><span class="seat-key"></span> Select a seat by clicking its checkbox.</p>
+</div>
+</section>
+<section class="contact">
+<h2>Travel With Confidence</h2>
+<p>Easy booking, comfortable journeys, and memorable destinations.</p>
+<a href="#booking" class="explore-btn">Plan Your Next Trip</a>
+</section>
+<footer>
+<p>© 2026 TravelGo | Your Journey, Our Priority</p>
+<p>Email: support@travelgo.example</p>
+</footer>
+</body>
+</html>

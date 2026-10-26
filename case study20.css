@@ -1,0 +1,396 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Georgia, "Times New Roman", serif;
+            background-color: #fffaf3;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navigation Bar */
+        header {
+            background-color: #24352a;
+            color: white;
+            padding: 18px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .logo {
+            font-size: 27px;
+            color: #e9bd75;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 22px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #e9bd75;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 520px;
+            background:
+                linear-gradient(rgba(0,0,0,0.55),
+                rgba(0,0,0,0.55)),
+                url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1600&q=85");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 30px;
+        }
+
+        .hero h1 {
+            font-size: clamp(36px, 6vw, 60px);
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 19px;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #c68b3c;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .btn:hover {
+            background-color: #9f6826;
+        }
+
+        /* Common Sections */
+        section {
+            padding: 65px 8%;
+            scroll-margin-top: 80px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 35px;
+            color: #24352a;
+            margin-bottom: 12px;
+        }
+
+        .section-intro {
+            text-align: center;
+            max-width: 650px;
+            margin: 0 auto 35px;
+            color: #666;
+        }
+
+        /* About */
+        .about {
+            text-align: center;
+            background-color: white;
+        }
+
+        .about p {
+            max-width: 850px;
+            margin: auto;
+            font-size: 17px;
+        }
+
+        /* Menu */
+        .menu {
+            background-color: #f5eee3;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 25px;
+        }
+
+        .menu-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px #00000012;
+            transition: transform 0.3s;
+        }
+
+        .menu-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .menu-card img {
+            width: 100%;
+            height: 210px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .menu-info {
+            padding: 20px;
+        }
+
+        .menu-info h3 {
+            color: #24352a;
+            margin-bottom: 8px;
+        }
+
+        .price {
+            display: block;
+            color: #b2762b;
+            font-weight: bold;
+            margin-top: 12px;
+            font-size: 19px;
+        }
+
+        /* Chefs */
+        .chef-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 25px;
+        }
+
+        .chef-card {
+            text-align: center;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px #00000012;
+        }
+
+        .chef-card img {
+            width: 170px;
+            height: 170px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .chef-card h3 {
+            color: #24352a;
+        }
+
+        /* Ambience Gallery */
+        .gallery {
+            background-color: #f5eee3;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 15px;
+        }
+
+        .gallery-grid img {
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            background-color: white;
+        }
+
+        .review-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 22px;
+        }
+
+        .review {
+            background: #fffaf3;
+            padding: 25px;
+            border-left: 4px solid #c68b3c;
+            border-radius: 6px;
+        }
+
+        .review h3 {
+            margin-top: 15px;
+            color: #24352a;
+        }
+
+        .stars {
+            color: #c68b3c;
+            margin-bottom: 10px;
+        }
+
+        /* Opening Hours and Location */
+        .details {
+            background-color: #24352a;
+            color: white;
+        }
+
+        .details .section-title {
+            color: #e9bd75;
+        }
+
+        .details-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 35px;
+        }
+
+        .detail-card {
+            padding: 25px;
+            border: 1px solid #68776b;
+            border-radius: 8px;
+        }
+
+        .detail-card h3 {
+            color: #e9bd75;
+            margin-bottom: 15px;
+        }
+
+        .detail-card p {
+            margin-bottom: 10px;
+        }
+
+        .details a {
+            color: #e9bd75;
+        }
+
+        /* Reservation Form */
+        .reservation {
+            background-color: #f5eee3;
+        }
+
+        .reservation-form {
+            max-width: 750px;
+            margin: auto;
+            padding: 30px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px #00000012;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 7px;
+            font-weight: bold;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font: inherit;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+        }
+
+        .full-width {
+            grid-column: 1 / -1;
+        }
+
+        .reservation-form .btn {
+            width: 100%;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #17251c;
+            color: white;
+            text-align: center;
+            padding: 25px 15px;
+        }
+
+        footer p {
+            margin: 5px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 850px) {
+            header {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            nav {
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 12px 18px;
+            }
+
+            .menu-grid,
+            .chef-grid,
+            .review-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .gallery-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 550px) {
+            section {
+                padding: 45px 5%;
+            }
+
+            .menu-grid,
+            .chef-grid,
+            .review-grid,
+            .gallery-grid,
+            .details-grid,
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero {
+                min-height: 430px;
+            }
+
+            .section-title {
+                font-size: 29px;
+            }
+
+            .menu-card img {
+                height: 230px;
+            }
+        }

@@ -1,0 +1,308 @@
+# Restaurant Website – HTML and CSS
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Royal Feast Restaurant</title>
+<link rel="stylesheet" href="case study20.css">
+</head>
+<body>
+<header>
+<div class="logo">Royal Feast</div>
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#menu">Menu</a>
+<a href="#chefs">Chefs</a>
+<a href="#gallery">Gallery</a>
+<a href="#reviews">Reviews</a>
+<a href="#reservation">Book a Table</a>
+</nav>
+</header>
+<section class="hero" id="home">
+<div>
+<h1>Welcome to Royal Feast</h1>
+<p>Delicious food, elegant ambience and unforgettable memories.</p>
+<a href="#menu" class="btn">Explore Our Menu</a>
+</div>
+</p>
+<section class="about" id="about">
+<h2 class="section-title">About Our Restaurant</h2>
+<p class="section-intro"> A perfect place for food lovers and family gatherings.
+</p>
+<p>Royal Feast is a restaurant dedicated to serving delicious meals prepared with fresh ingredients and passion. We combine traditional flavours with modern cooking techniques to create a memorable dining experience. Our friendly staff, elegant interiors and carefully prepared dishes make every visit special.</p>
+</section>
+<section class="menu" id="menu">
+<h2 class="section-title">Our Special Menu</h2>
+<p class="section-intro">Discover our favourite dishes, made fresh for you.</p>
+
+        <div class="menu-grid">
+
+            <div class="menu-card">
+                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=700&q=80"
+                     alt="Freshly prepared pizza">
+                <div class="menu-info">
+                    <h3>Margherita Pizza</h3>
+                    <p>Cheese, fresh tomatoes and aromatic herbs.</p>
+                    <span class="price">₹249</span>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=80"
+                     alt="Juicy burger">
+                <div class="menu-info">
+                    <h3>Classic Burger</h3>
+                    <p>A delicious burger served with crispy fries.</p>
+                    <span class="price">₹199</span>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=700&q=80"
+                     alt="Special vegetable pizza">
+                <div class="menu-info">
+                    <h3>Veggie Pizza</h3>
+                    <p>Fresh vegetables, cheese and a crispy crust.</p>
+                    <span class="price">₹279</span>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=700&q=80"
+                     alt="Fresh salad bowl">
+                <div class="menu-info">
+                    <h3>Garden Salad</h3>
+                    <p>Fresh greens with a light, tasty dressing.</p>
+                    <span class="price">₹149</span>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=700&q=80"
+                     alt="Sweet dessert">
+                <div class="menu-info">
+                    <h3>Chocolate Dessert</h3>
+                    <p>A sweet treat for every dessert lover.</p>
+                    <span class="price">₹129</span>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=700&q=80"
+                     alt="Refreshing beverage">
+                <div class="menu-info">
+                    <h3>Refreshing Drink</h3>
+                    <p>A cool and refreshing drink to complete your meal.</p>
+                    <span class="price">₹99</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Chef Profiles -->
+    <section id="chefs">
+        <h2 class="section-title">Meet Our Chefs</h2>
+        <p class="section-intro">
+            Passionate professionals behind every delicious dish.
+        </p>
+
+        <div class="chef-grid">
+            <div class="chef-card">
+                <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=400&q=80"
+                     alt="Chef preparing food">
+                <h3>Chef Arjun</h3>
+                <p>Head Chef – International Cuisine</p>
+            </div>
+
+            <div class="chef-card">
+                <img src="https://images.unsplash.com/photo-1583394293214-28ded15ee548?auto=format&fit=crop&w=400&q=80"
+                     alt="Professional chef">
+                <h3>Chef Priya</h3>
+                <p>Specialist – Traditional Cuisine</p>
+            </div>
+
+            <div class="chef-card">
+                <img src="https://images.unsplash.com/photo-1574966739987-65e38b3c7be4?auto=format&fit=crop&w=400&q=80"
+                     alt="Chef in a professional kitchen">
+                <h3>Chef Rahul</h3>
+                <p>Pastry Chef – Desserts and Baking</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Restaurant Ambience -->
+    <section class="gallery" id="gallery">
+        <h2 class="section-title">Restaurant Ambience</h2>
+        <p class="section-intro">
+            Enjoy delicious food in a warm and welcoming atmosphere.
+        </p>
+
+        <div class="gallery-grid">
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=700&q=80"
+                 alt="Elegant restaurant dining area">
+
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=700&q=80"
+                 alt="Restaurant interior and tables">
+
+            <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=700&q=80"
+                 alt="Beautiful restaurant dining space">
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="reviews">
+        <h2 class="section-title">Customer Testimonials</h2>
+        <p class="section-intro">
+            What our guests say about their dining experience.
+        </p>
+
+        <div class="review-grid">
+            <div class="review">
+                <div class="stars">★★★★★</div>
+                <p>"Amazing food and a beautiful atmosphere.
+                   I really enjoyed the experience."</p>
+                <h3>— Ananya</h3>
+            </div>
+
+            <div class="review">
+                <div class="stars">★★★★★</div>
+                <p>"Friendly staff, tasty dishes and excellent
+                   presentation. Highly recommended!"</p>
+                <h3>— Rahul</h3>
+            </div>
+
+            <div class="review">
+                <div class="stars">★★★★★</div>
+                <p>"A wonderful place for a family dinner.
+                   The desserts were delicious."</p>
+                <h3>— Sneha</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Opening Hours and Location -->
+    <section class="details" id="location">
+        <h2 class="section-title">Visit Us</h2>
+        <p class="section-intro">
+            We look forward to welcoming you.
+        </p>
+
+        <div class="details-grid">
+            <div class="detail-card">
+                <h3>Opening Hours</h3>
+                <p>Monday – Friday: 11:00 AM – 10:00 PM</p>
+                <p>Saturday: 11:00 AM – 11:00 PM</p>
+                <p>Sunday: 12:00 PM – 10:00 PM</p>
+            </div>
+
+            <div class="detail-card">
+                <h3>Location Details</h3>
+                <p>Address: Main Road, Vijayawada, Andhra Pradesh</p>
+                <p>Phone: +91 98765 43210</p>
+                <p>Email: royalfeast@example.com</p>
+                <p>
+                    <a href="https://www.google.com/maps/search/restaurants+in+Vijayawada"
+                       target="_blank" rel="noopener noreferrer">
+                        Find us on Google Maps
+                    </a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Table Reservation -->
+    <section class="reservation" id="reservation">
+        <h2 class="section-title">Reserve Your Table</h2>
+        <p class="section-intro">
+            Fill in your details to request a reservation.
+        </p>
+
+        <form class="reservation-form"
+              action="mailto:royalfeast@example.com"
+              method="post"
+              enctype="text/plain">
+
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="Name"
+                           placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="Email"
+                           placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="Phone"
+                           placeholder="Enter your phone number"
+                           pattern="[0-9+() -]{7,20}" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="guests">Number of Guests</label>
+                    <select id="guests" name="Guests" required>
+                        <option value="">Select guests</option>
+                        <option>1 Guest</option>
+                        <option>2 Guests</option>
+                        <option>3 Guests</option>
+                        <option>4 Guests</option>
+                        <option>5 Guests</option>
+                        <option>6 or More Guests</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="date">Reservation Date</label>
+                    <input type="date" id="date" name="Date"
+                           min="2026-10-23" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="time">Reservation Time</label>
+                    <select id="time" name="Time" required>
+                        <option value="">Select a time</option>
+                        <option>11:00 AM</option>
+                        <option>12:00 PM</option>
+                        <option>1:00 PM</option>
+                        <option>2:00 PM</option>
+                        <option>5:00 PM</option>
+                        <option>6:00 PM</option>
+                        <option>7:00 PM</option>
+                        <option>8:00 PM</option>
+                        <option>9:00 PM</option>
+                    </select>
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="message">Special Requests</label>
+                    <textarea id="message" name="Special Requests"
+                              rows="4"
+                              placeholder="Birthday, anniversary, etc."></textarea>
+                </div>
+
+                <div class="form-group full-width">
+                    <button type="submit" class="btn">
+                        Request a Reservation
+                    </button>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Royal Feast Restaurant. All rights reserved.</p>
+        <p>Made with love for food lovers.</p>
+    </footer>
+
+</body>
+</html>
+```
+
